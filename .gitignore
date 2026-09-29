@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
+DatasetUIExample/.posit/publish*
+SimulatedDataTableExample/.posit/*
