@@ -34,7 +34,6 @@ library(rsconnect)
 #   Account (top-right) > Tokens > Show > Copy to clipboard
 # This gives you a ready-made setAccountInfo() call containing your name,
 # token, and secret. Paste it below (never commit the secret to Git).
-
 rsconnect::setAccountInfo(
   name   = "your-account-name",
   token  = "your-token",
@@ -45,13 +44,11 @@ rsconnect::setAccountInfo(
 # Point deployApp() at the folder containing app.R. The first deploy uploads
 # everything and returns a public URL like:
 #   https://your-account-name.shinyapps.io/AppName/
-
 rsconnect::deployApp("SimulatedDataTableExample")
 
 # --- Step 3. Redeploy after changes ------------------------------------------
 # Re-run the same call to push updates. Passing the app name keeps it deployed
 # to the same URL instead of creating a new app.
-
 rsconnect::deployApp("SimulatedDataTableExample", appName = "SimulatedDataTableExample")
 
 
